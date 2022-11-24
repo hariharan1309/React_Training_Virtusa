@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <link rel="stylesheet" href="../overflow.css">
+</head>
+<body><br>
+    <h4>Over flow for big content</h4>
+    <div class="of1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate quas fugiat nemo. Illum,
+         vitae molestiae odio aliquam fugit voluptatem, animi, eos sint id voluptatum ex suscipit quam. Fugit, illum?
+    </div><br>
+    <div class="of2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quaerat iste unde animi tenetur commodi delectus libero corporis quam est,
+         hic recusandae aperiam maiores, voluptas eveniet expedita eos. Deserunt, eaque?
+    </div><br>
+    <div class="of3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ducimus libero velit necessitatibus non. Repudiandae itaque quisquam, 
+        earum pariatur modi atque velit suscipit, aliquam aspernatur perspiciatis, alias cum quibusdam rerum.
+    </div><br><br><br>
+    <div class="of4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ducimus libero velit necessitatibus non. Repudiandae itaque quisquam, 
+        earum pariatur modi atque velit suscipit, aliquam aspernatur perspiciatis, alias cum quibusdam rerum.
+    </div>
+
+    <h3>Float</h3>
+    <p>Float is mostly used to wrap the image and text</p>
+    <p>Image 1</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda inventore atque saepe cupiditate exercitationem officia 
+        obcaecati necessitatibus voluptas animi? Aliquam quae necessitatibus
+     tempore totam asperiores eos odio sint consectetur doloremque!</p>
+    <img src="../photo.jpg" alt="Sample Image" width="300" height="150"><!-- style="float:left;"-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ratione non, qui maiores consectetur assumenda, obcaecati praesentium commodi
+         delectus sint aspernatur quisquam nemo numquam provident quod voluptates quaerat, nihil dolor.</p>
+    <h3>Using float </h3>
+    <p>Image 2</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda inventore atque saepe cupiditate exercitationem officia 
+        obcaecati necessitatibus voluptas animi? Aliquam quae necessitatibus
+        tempore totam asperiores eos odio sint consectetur doloremque!</p>
+    <img id="img2" src="../photo.jpg" alt="Sample Image" width="300" height="150">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ratione non, qui maiores consectetur assumenda, obcaecati praesentium commodi
+            delectus sint aspernatur quisquam nemo numquam provident quod voluptates quaerat, nihil dolor.</p>
+        <h3>Continuous float & clear</h3>
+    <div id="d1">Div1</div>
+    <div id="fl">This will be under the element float left</div>
+    <div id="d2">Div2</div>
+    <div id="fr">This will be under the element float Right</div>
+<h3>clearfix</h3>
+<p>without</p>
+    <div style="border:3px solid red ;">
+        <img id="img2" src="../photo.jpg" alt="Sample Image" width="300" height="150">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quod illum rem officiis animi. Officia laboriosam quam dolores consectetur error,
+             magnam assumenda modi, ducimus, architecto aperiam earum eos inventore repudiandae.</p>
+    </div>
+    <p>With</p><br>
+    <div class="clearfix" style="border:3px solid red ;">
+        <img id="img2" src="../photo.jpg" alt="Sample Image" width="300" height="150">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quod illum rem officiis animi. Officia laboriosam quam dolores consectetur error,
+             magnam assumenda modi, ducimus, architecto aperiam earum eos inventore repudiandae.</p>
+    </div>
+    <p>New clearfix</p>
+    <div class="clearfix" style="border:3px solid red ;">
+        <img id="img2" src="../photo.jpg" alt="Sample Image" width="300" height="150">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quod illum rem officiis animi. Officia laboriosam quam dolores consectetur error,
+             magnam assumenda modi, ducimus, architecto aperiam earum eos inventore repudiandae.</p>
+    </div>
+
+    <h3>Border Boxing</h3>
+    <p>used to keepup the elements when we add some border ,margins etc which can break the flow</p>
+    <div>
+        <img class="bbx" src="../photo.jpg" alt="Sample Image" >
+        <img class="bbx" src="../photo.jpg" alt="Sample Image" >
+        <img class="bbx" src="../photo.jpg" alt="Sample Image" >
+        <p>the after used in ths css with clearfix will provide some flexibility</p>
+    </div>
+    </body>
+</html>
