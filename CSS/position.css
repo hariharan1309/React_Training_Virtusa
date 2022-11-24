@@ -1,0 +1,29 @@
+div.static{
+    border: 2px solid grey;
+    position: static;
+    /* normal flow of the page */
+}
+div.relative{
+    border: 2px solid grey;
+    position: relative;
+    /* normal flow of the given lf ri top bt */
+    left: 30px;
+}
+div.fixed{
+    border: 2px solid grey;
+    position: relative;
+    /* won't change even on resizing */
+}
+div.absolute{
+    border: 2px solid grey;
+    position: absolute;
+    /* it can overlap and relative to nearest element */
+}
+div.sticky{
+        position: -webkit-sticky;  
+        position: sticky; 
+        border: 2px solid grey;
+        top:20px;
+        /* top will set the place where the sticky will be placed form top */
+}
+

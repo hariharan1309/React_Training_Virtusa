@@ -1,0 +1,97 @@
+.dropdown{
+    position: relative;
+    display: inline-block;
+    /* this is mandatory */
+}
+div.dropdown span{
+    display: block;
+    background-color: rgba(0, 255, 255, 0.302);
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    box-shadow: #dddddd;
+    cursor: pointer;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    cursor: pointer;
+}
+div.dropdown-content{
+    position: absolute;
+/* this is mandatory */
+    text-align: center;
+    display: none;
+    background-color:whitesmoke;
+    color: rgba(0, 0, 0, 0.671);
+    font-size: large;
+    width: 100px;
+    right: 0;
+    /* flow over right */
+    padding: 10px;
+    box-shadow: 4px 10px 10px 10px rgba(0,0,0,0.3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+}
+/* Dropdown menu */
+
+.dropmenu{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+
+}
+div.dropmenu-content{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    margin:10px;
+    box-shadow: 4px 8px 15px 4px rgba(145, 44, 165, 0.486);
+    width: 120px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius:0px 20px 0px 20px;
+    z-index: 1;
+}
+div.dropmenu-content li{
+    display: block;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.dropmenu-content li:hover{
+    background-color: rgba(194, 85, 183, 0.386);
+    border-radius: unset;
+}
+.dropmenu span{
+    background-color: #dddddd;
+    padding: 10px;
+}
+.dropmenu:hover .dropmenu-content{
+    display: block;
+   
+}
+/* Drop image */
+.dropimg{
+    display: inline-block;
+    position: relative;
+
+}
+.dropimg-content{
+    display: none;
+    position: absolute;
+    border: 2px #dddddd;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px 2px rgba(0, 0, 0, 0.39);
+    z-index:-1;
+}
+.dropimg:hover .dropimg-content{
+    display: block;
+}
+.dropimg-content span{
+    display: block;
+    background-color: #dddddd;
+    padding: 10px;
+    text-align: center;
+}

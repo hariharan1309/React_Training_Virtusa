@@ -1,0 +1,68 @@
+body{
+    font-family: sans-serif;
+    font-size: 50px;
+    /* margin: 0px; to remove the spaces on some browser edges */
+}
+#margin{
+    border:5px solid rgba(212, 0, 255, 0.608);
+    margin:20px 25px 30px 35px;
+}
+div{
+    border: 5px dashed pink;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.inher{
+    /* Everything related to margin[padding] will be inherited */
+    margin: inherit;
+}
+h1.margin_clp{
+    margin-bottom: 50px;
+}
+h2.margin_clp{
+    margin-top: 20px;
+}
+h1 {
+    margin: 0 0 50px 0;
+  }
+  
+  h2 {
+    margin: 20px 0 0 0;
+  }
+  /* Padding Operation */
+h1.pad1{
+    background-color: aqua;
+    padding:5px 3px 10px 15px;
+}
+p.pad1{
+    background-color: rgb(225, 114, 23);
+    padding-left: 20px;
+    padding-right: 3px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+span.pad1{
+    background-color: rgb(107, 225, 23);
+    width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    /* The width will increase with 60px extra because of padding */
+}
+span.pad2{
+    background-color: rgb(107, 225, 23);
+    width: 500px;
+}
+
+h4.pad1{
+    background-color: rgb(107, 225, 23);
+    width: 500px;
+    padding: 30px;
+    /* The width will increase with 60px extra because of padding */
+}
+h4.pad2{
+    background-color: rgb(107, 225, 23);
+    width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    /* The padding will be implemented but also the width won't change  */
+}

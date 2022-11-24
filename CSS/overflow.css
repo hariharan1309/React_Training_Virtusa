@@ -1,0 +1,89 @@
+.of1{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 4px;
+    margin: 5px;
+    overflow: scroll;/*auto same as scroll but only necessary*/
+    /* will makes the text fit within the size */
+}
+.of2{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 4px;
+    margin: 5px;
+    overflow: hidden;/*vi*/
+    /* will hide the outer text */
+}
+.of3{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 4px;
+    margin: 5px;
+    overflow: visible;/*visible will make it worse by showing */
+}
+.of4{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 4px;
+    margin: 5px;
+    overflow-y:hidden;/*vi*/
+    overflow-x: scroll;
+    /* only x will be scrollable  not y axis */
+}
+/* Float */
+#img2{
+    float: right;
+}
+#d1{
+    background-color: red;
+}
+#d2{
+    background-color: blue;
+}#d3{
+    background-color: green;
+}
+/* Floating all divs  */
+#d1{
+    float: left;
+    padding: 15px;
+    /* margin: 10px; */
+    border: 5px solid  grey;
+}
+#d2{
+    float: right;
+    padding: 15px;
+    /* margin: 10px; */
+    border: 5px solid  grey;
+}
+/* Clear */
+#fl{
+    clear: left;
+    border: 2px solid red;
+}
+#fr{
+    clear: right;
+    border: 2px solid red;
+
+}
+/* Clearfix */
+.clearfix{
+    overflow: auto;
+}
+.bbx{
+    float: left;
+    width: 33.33%;
+    border: 5px solid rgba(81, 68, 179, 0.537);
+    box-sizing: border-box;
+    /* if we remove the border box the flow will collapse */
+    border-radius: 5px;
+    padding: 3px;
+}
+.bbx::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

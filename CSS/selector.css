@@ -1,0 +1,72 @@
+/* These are the basic Selectors */
+/* The CSS will decorate by order which will override  */
+* {
+    /*  for all elements */
+    font-family: sans-serif;
+}
+.cls1{
+    /* class declaration */
+    background-color: rgba(0, 213, 255, 0.795);
+}
+p{
+    /* this will override the .cls1 declaration  */
+    background-color: red;
+}
+
+#id1{
+    /* id declaration */
+    color: grey;
+    background-color: antiquewhite;
+    display: inline-block;
+}
+h1,h2{
+    /* multiple element declar */
+    text-align: center;
+}
+.cls2{
+    font-style: italic;
+}
+.border{
+    border: 15px solid pink;
+    margin: 15px 50px;
+}
+
+/* decesant selector */
+div p{
+    background-color: blue;
+}
+/* child */
+div > p{
+    background-color: greenyellow;
+}
+/* immediate element only*/
+div+p{
+    background-color: violet;
+}
+/* General all after  */
+div ~ h4{
+    background-color: coral;
+}
+
+/* Attr Selectors */
+p[id]{
+    background-color: cornflowerblue;
+}
+p[title="#HTML"]{
+    background-color: darkmagenta;
+}
+[title~="flower"] {
+    border: 5px solid yellow;
+  }
+[title|="funny"]:hover{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+[title^="fun1"]{
+    background-color: tomato;
+}
+[title$="fun2"]{
+    background-color: chartreuse;
+}
+[title*="fun3"]{
+    background-color: blue;
+}

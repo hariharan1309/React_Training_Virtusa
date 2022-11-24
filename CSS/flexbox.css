@@ -1,0 +1,186 @@
+*{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Direction */
+.dir-container{
+    display: flex;
+    background-color: rgba(98, 15, 176, 0.623);
+    flex-direction:column;/*cl rev,row,row-rev[rev with right to left]*/
+}
+
+.dir-container p{
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Wrap */
+
+.wrap-container{
+    display: flex;
+    background-color: rgba(19, 19, 165, 0.523);
+    flex-wrap: no-wrap;/*no wrap - will adjust to fit the content, wrap-reverse*/
+    flex-direction: row;
+}
+.wrap-container p{
+    background-color: greenyellow;
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    color: black;
+}
+/* Flow -wrap & direction */
+.flow-container{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.5);
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.flow-container p{
+    background-color: orange;
+    padding: 30px;
+    margin: 10px;
+    width: 40px;
+
+}
+/* Justify Content */
+.jus-container{
+    background-color: rgb(41, 198, 41);
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;/*f-st,f-end,space-btw -space between the contents,space-ard -space on all sides*/
+    height: 400px;
+}
+
+.jus-container p{
+    padding: 20px;   
+    background-color: rgba(255, 255, 0, 0.411);
+    color: whitesmoke;
+    margin: 20px;
+    width: 10px;
+    text-align: center;
+}
+/* Align Items */
+.align_item-container{
+    background-color: rgb(41, 198, 41);
+    height: 400px;
+    display: flex;
+    flex-flow:row wrap;
+    align-items:center;/*f-st,f-end,stretch-stretch the item height or width,baseline - align with a comman conecting line*/
+}
+
+.align_item-container p{
+    padding: 20px;   
+    background-color: rgba(255, 255, 0, 0.411);
+    color: whitesmoke;
+    margin: 20px;
+    width: 10px;
+    text-align: center;
+}
+    /* Align Content */
+
+.align_cont-container{
+    background-color: rgb(41, 198, 41);
+    display: flex;
+    flex-flow:row wrap;
+    height: 400px;
+    align-content:center;/*f-st,f-end,space-btw -space between the contents,space-ard -space on all sides,stretch-stretch the item height or width*/
+}
+
+.align_cont-container p{
+    padding: 20px;   
+    background-color: rgba(255, 255, 0, 0.411);
+    color: whitesmoke;
+    margin: 20px;
+    width: 10px;
+    text-align: center;
+}
+/* Centered Content */
+.just-align-container{
+    background-color: rgb(41, 198, 41);
+    height: 400px;
+    display: flex;
+    flex-flow:row wrap;
+    align-items:center;
+    justify-content: center;
+}
+.just-align-container p{
+    background-color: aqua;
+    padding: 30px;
+    margin: 20px;
+}
+/* Order the flex items */
+.order{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.568);
+    flex-direction: column;
+}
+.order p{
+    padding: 20px;
+    background-color: cyan;
+    margin: 5px;
+    color: blue;
+    font-size: large;
+}
+/* Flex-grow */
+.f-grow{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.568);
+    flex-direction: row;
+}
+.f-grow p{
+    padding: 20px;
+    background-color: cyan;
+    margin: 5px;
+    color: blue;
+    font-size: large;
+}
+/* Flex shrink */
+.f-shrink{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.568);
+    flex-direction: row;
+}
+.f-shrink p{
+    padding: 20px;
+    background-color: cyan;
+    margin: 5px;
+    color: blue;
+    font-size: large;
+    width: 100px;
+}
+/* Flex-basic */
+.f-basic{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.568);
+    flex-direction: row;
+}
+.f-basic p{
+    padding: 20px;
+    background-color: cyan;
+    margin: 5px;
+    color: blue;
+    font-size: large;
+    width: 100px;
+}
+/* Align self */
+
+.self{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.568);
+    flex-direction: row;
+    align-items: flex-start;
+    height: 200px;
+}
+.self p{
+    padding: 20px;
+    background-color: cyan;
+    margin: 5px;
+    color: blue;
+    font-size: large;
+    width: 100px;
+}

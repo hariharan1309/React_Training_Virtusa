@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+}
+div.width{
+    background-color: navajowhite;
+    width: fit-content;
+    /* the percentage will adopt by the browser window */
+    /* max& fit content are morely the same */
+    /* fit content will adopt to the browser but max won't*/
+    height: max-content;
+    padding: 2px;
+}
+h4.width{
+    /* If width was declared it can't be over rided */
+    max-width: 1200px;
+    /* the maximum width for a content */
+    min-width: 700px;
+    /* The minimum width for a content */
+    max-height: 30%;
+    /* it doesn't exced the given value but acts like the fit content */
+    background-color: chocolate;
+}

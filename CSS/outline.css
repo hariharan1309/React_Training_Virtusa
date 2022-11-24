@@ -1,0 +1,22 @@
+.outline{
+    font-family: sans-serif;
+}
+.out1{
+    border:5px solid greenyellow;
+    margin: 5px;
+    padding: 12px;
+    outline:5px solid blue ;
+    outline-offset: 5px;
+    /* distance between the border and the outline */
+}
+/* The margin will value from two border of the elements so it will colapse with other elements */
+/* the margin & padding will effect the  outline by having same value for others*/
+/* It will actually collapse the margin */
+.out2{
+    border:5px solid greenyellow;
+    margin: 5px;
+    padding: 12px;
+    outline:5px dashed blue;
+    outline-offset: 5px;
+
+}

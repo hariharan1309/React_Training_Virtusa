@@ -1,0 +1,111 @@
+/* Alignment */
+.text{
+    color: rgba(0, 128, 60, 0.915);
+    background-color: antiquewhite;
+    text-align:justify;
+    /* left& end for left sided */ /* right & end for right sided */    
+}
+.txtl{
+    color: rgb(226, 43, 174);
+    background-color: rgba(64, 224, 208, 0.56) ;
+    text-align-last: right;/*Only for the last line*/
+}
+.dirct{
+    direction: rtl;
+    font-style: oblique;
+    /* right to left */
+    unicode-bidi: bidi-override;
+}
+/* Vertical Align */
+span.v1{
+    vertical-align: sub;
+    background-color: black;
+    color: whitesmoke;
+}
+span.v2{
+    vertical-align: sup;
+    background-color: black;
+    color: whitesmoke;
+
+}span.v3{
+    vertical-align: text-top;
+    background-color: black;
+    color: whitesmoke;
+
+}span.v4{
+    vertical-align: 20%;
+    background-color: black;
+    color: whitesmoke;
+
+}
+/* decoration */
+span.d1{
+    color: violet;
+    text-decoration-line: line-through;
+    text-decoration-color: rgb(204, 0, 255);
+    text-decoration-style: dashed;
+    text-decoration-thickness: 15%;
+}
+span.d2{
+    color: violet;
+    text-decoration-line: overline;
+    text-decoration-color: rgb(149, 255, 0);
+    text-decoration-style: dotted;
+    text-decoration-thickness: 25%;
+
+
+}span.d3{
+    color: violet;
+    text-decoration-line: underline overline;
+    text-decoration-color: rgb(255, 170, 0);
+    text-decoration-style: wavy;
+    text-decoration-thickness: auto;/*default value*/
+}
+span.d4{
+    color: rgb(128, 0, 98);
+    text-decoration: underline  rgb(0, 68, 255) double 30%;
+    /* line color style thickness */
+
+}
+a{
+    text-decoration: none;
+}
+/* Spacing */
+p.s1{
+    text-indent:50px;
+    /* Spacing both ver& hor from the topic /line  */
+}
+p.s2{
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    /* letter& word spacing */
+}
+p.s3{
+    line-height: 50px;
+    /* top & bottom space */
+}
+p.s4{
+    white-space:nowrap;
+}
+
+p.sh1{
+    text-shadow:2px 5px  ;
+}
+p.sh2{
+    text-shadow:2px  5px blue ;
+}
+p.sh3{
+    color: rgba(0, 255, 255, 0.366);
+    text-shadow: 2px 2px 5px rgb(49, 0, 139);
+}
+p.sh4{
+    color: rgb(102, 0, 255);
+    /* for multiple colour used exact colour */
+    text-shadow: 3px 3px 7px rgb(0, 213, 255),1px 0 3px rgba(128, 128, 128, 0.51),0 1px 3px rgba(0, 128, 75, 0.662);
+}
+p.sh5{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black, 1px 0 25px blue, 1px 0 5px darkblue;
+}
+    /* Text shadow */
+    /* vertical_s horizontal_s blur_s colour  */

@@ -1,0 +1,57 @@
+p.hov{
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+p.hov:hover{
+    background-color: rgba(137, 43, 226, 0.347);
+    padding: 12px;
+    margin: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div h3:hover~p{
+    background-color: yellowgreen;
+    display: inline-block;
+    padding: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div+p{
+    display: none;
+}
+div.fs span:first-child{
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.fc input:focus{
+    background-color: rgb(150, 60, 60);
+}
+div.pe1:first-line{
+    color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.pe2::first-letter{
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.pe2::first-line{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.befor #b::before{
+    content:url(owl.gif);
+}
+div.befor #a::after{
+    content:url(owl.gif);
+}
+
+div.mark li::marker{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span::selection{
+    color: blue;
+    background-color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

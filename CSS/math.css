@@ -1,0 +1,23 @@
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span.max{
+    background-color: aqua;
+    padding: 20px;
+    width: max(90%,100px);
+}
+span.min{
+    background-color: yellow;
+    height: 100px;
+    width: min(50%, 100px);
+}
+span.cal{
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+}
+/* CSS minify is used to minimize the css code */

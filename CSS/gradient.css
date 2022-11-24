@@ -1,0 +1,81 @@
+/* Linear */
+/* background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+ */
+#tor{
+    height: 100px;
+    width: 200px;
+    background-image: linear-gradient(to right,red ,yellow);
+}
+#tol{
+    height: 100px;
+    width: 200px;
+    /* Diagonal */
+    background-image: linear-gradient(to  bottom left,red ,orange,yellow);  
+}
+#tob{
+    /* default */
+    height: 100px;
+    width: 200px;
+    background-image: linear-gradient(to bottom,red,yellow,blue);
+}
+#tou{
+    height: 100px;
+    width: 200px;
+    background-image: repeating-linear-gradient(rgba(255, 0, 0, 0.518), rgba(255, 255, 0, 0.5) 10%, green 20%);
+}
+
+/* Radial */
+/* background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+ */
+
+#r1{
+    height: 100px;
+    width: 200px;
+    background: radial-gradient(circle,red 10%,orange 30%,green 60%);
+}
+#r2{
+    height: 100px;
+    width: 200px;
+    background: radial-gradient(red 10%,orange 30%,green 60%);
+}
+
+#r3{
+    height: 100px;
+    width: 200px;
+    background: radial-gradient(closest-side ,yellow,orange);
+}
+#r4{
+    height: 100px;
+    width: 200px;
+    background: radial-gradient(closest-corner ,yellow,orange);
+}
+
+/* conical */
+/* background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+ */
+
+ #c1{
+    height: 100px;
+    width: 200px;
+    background-image: conic-gradient(red, green,blue);
+}
+ #c2{
+    height: 100px;
+    width: 100px;
+    background-image: conic-gradient(red,yellow,green,aqua,blue);
+    border-radius: 50%;
+
+ }
+ #c3{
+    height: 100px;
+    width: 100px;
+    background-image: conic-gradient(green,lightgreen 90deg,yellow);
+    border-radius: 50%;
+
+ }
+ #c4{
+    height: 100px;
+    width: 200px;
+    background-image: repeating-conic-gradient(red 10deg, yellow 110deg);
+    border-radius: 50%;
+ }

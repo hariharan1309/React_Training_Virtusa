@@ -1,0 +1,143 @@
+.nav1{
+    list-style-type : none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+/* needed for basic nav bar */
+
+nav.nav1 li{
+    text-decoration: none;
+    display: block;
+    background-color: rgb(28, 207, 156);
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    font-size: large;
+}
+nav.nav1 li a,nav.fnav li a, nav.hnav li a, nav.hfnav li a{
+    text-decoration: none;
+}
+/* for user experience */
+nav.nav1 li:hover{
+    background-color: rgb(19, 225, 132);
+    /* font-size: larger; */
+    font-weight: bold;
+
+}
+nav.nav1 li:active{
+    background-color: rgb(54, 125, 231);
+    color: white;
+}
+/* Full fledged menu */
+div.fnav{
+    background-color: rgb(70, 137, 115);
+    height: 500px;
+}
+nav.fnav{
+    display: block;
+    list-style-type : none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    width: 150px;
+    height: 100%;
+    /* Full height of the  */
+    border-radius: 0px 5px 5px 0px;
+    position: relative; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+nav.fnav li{
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    padding: 20px 0px;
+}
+/* for user experience */
+nav.fnav li:hover{
+    background-color: rgb(19, 225, 132);
+    /* font-size: larger; */
+    font-weight: bold;
+
+}
+nav.fnav li:active{
+    background-color: rgb(54, 125, 231);
+    color: white;
+}
+/* Horizontal Nav bar */
+nav.hnav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav.hnav li{
+    float: left;
+}
+nav.hnav li a{
+    background-color: #dddddd;
+    padding: 10px;
+    display: block;
+    width: 100px;
+    box-sizing: border-box;
+
+}
+nav.hnav li a:hover{
+    background-color: grey;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Horizontal full nav bar */
+nav.hfnav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #dddddd;
+    overflow: hidden;
+    /* width: 100%;
+    position: fixed;
+    top: 0; or bottom:0; */
+}
+nav.hfnav li{
+    float: left;
+}
+nav.hfnav li a{
+    padding: 10px;
+    display: block;
+    width: 100px;
+    box-sizing: border-box;
+
+}
+nav.hfnav li a:hover{
+    background-color: grey;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav.rnav {
+    list-style-type: none;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.906);
+    border: 1px solid grey;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+nav.rnav li{
+    float: left;
+}
+nav.rnav li a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: rgba(210, 201, 201, 0.466);
+    text-align: center;
+    width: 100px;
+}
+nav.rnav li a:hover{
+    background-color: rgba(128, 128, 128, 0.767);
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}

@@ -1,0 +1,13 @@
+p.block{
+    display: inline;
+}
+span.inline{
+    display: block;
+}
+
+span.hide{
+    display: none;
+}
+span.Remove{
+    visibility: hidden;
+}

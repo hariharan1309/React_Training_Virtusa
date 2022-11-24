@@ -1,0 +1,50 @@
+/* Changing cloors */
+#w3:link{
+
+    background-color: red;
+    color: yellow;
+}
+
+#w3:visited{
+    background-color: aquamarine;
+    color: blue;
+}
+#w3:hover ,#yt :active{
+    background-color: orange;
+    color:red;
+}
+/* Changing styles  */
+
+#jt:link{
+    font-variant: small-caps;
+    color: rgb(255, 0, 38);
+}
+#jt:visited{
+    font-variant: normal;
+    color: grey;
+}
+#jt:hover,#jt:active{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+/* Buttons */
+#yt:link{
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 3px;
+    border: 3px solid red;
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#yt:visited{
+    border: 3px solid rgb(19, 128, 0);
+    background-color: rgb(19, 128, 0);
+    color: white;
+}
+#yt:hover , #yt:active{
+    border: 3px solid rgba(0, 255, 208, 0.645);
+    background-color: rgba(0, 255, 208, 0.645);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

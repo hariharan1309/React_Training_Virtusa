@@ -1,0 +1,17 @@
+body{
+    counter-reset:Sec;
+    /* naming the counter */
+}
+h5::before{
+    counter-increment: Sec;
+    content:"Sec " counter(Sec) ":- ";
+}
+/* nested Counter */
+body{
+    counter-reset:Sub;
+    /* naming the counter */
+}
+h4::before{
+    counter-increment: Sub;
+    content:"Sub " counter(Sub) ":: ";
+}
