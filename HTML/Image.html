@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="Kprlogo.jpg" type="image/x-icon">
+    <script>
+        function comp(){
+            alert("Computer");
+        }
+        function coff(){
+            alert("coffee");
+        }
+    </script>
+</head>
+<body>
+    <img title="Linux Organization"src="logo.png" alt="Linux" height="100" width="150"><br><br>
+    <a href="https://www.youtube.com"><img title="Linux Organization"src="logo.png" alt="Linux" height="100" width="150"></a>
+    <!--Image as Link-->
+    <!-- Image Mapping [Action on clicking a image portion] -->
+    <img src="workplace.jpg" alt="Mapped_Image" title="Mapped Image" usemap="#mappy">
+    <map name="mappy">
+        <area shape="rect" coords="34,44,270,350" href="https://www.hp.com/in-en/home.html" alt="Comp" onclick="comp()"><!--Four corner coordinates-->
+        <area shape="circle" coords="337,300,44" href="https://www.starbucks.in/" alt="Coff" onclick="coff()"><!--center coordinate point & rad length-->
+    </map>
+    <img src="workplace.jpg" alt="Mapped_Image" title="Mapped Image" usemap="#mapp">
+    <map name="mapp">
+        <area shape="default" href="https://www.hp.com/in-en/home.html" alt="Comp" onclick="comp()"><!--whole image as link -->
+    </map>
+     <br><br><br>
+      <!-- For Multiple Images by varying the size & format -->
+ <picture>
+    <!-- The first image will be displayed unless the condition of 1 is false -->
+    <source media="(max-width: 650px)" srcset="logo.png">
+    <source media="(max-width: 450px)" srcset="kprlogo.jpg">
+  
+    <img src="workplace.jpg" alt="Values" style="width: 400px;">
+    <!-- The Img is used for unsupported and unmatched condition usage -->
+  </picture>
+  <!-- <img src="workplace.jpg" alt="Repertive Image " style="background-repeat:space;"> -->
+  <!-- Favicon --Web icon -->
+  <a href="Image.html" alt="Same page Link" >Sampe Page</a>
+</body>
+</html>

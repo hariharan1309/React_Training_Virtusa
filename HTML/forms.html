@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<title>
+  Form Input attribute
+</title>
+<style>
+  #email{
+    transition: width 0.4s ease-in-out;
+    box-sizing: border-box;
+
+  }
+  #email:focus{
+    width: 100%;
+  }
+</style>
+<html>
+<body>
+
+<h1>The form autocomplete attribute</h1>
+
+<p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
+
+<p>Then, try to set autocomplete to "off".</p>
+<!-- autocomplete used to reuse the from attributes -->
+<!-- novalidate is used for from with some relief for attributes -->
+<!-- enctype is for encoding in form -->
+<!-- the action will contain th server file link -->
+<form autocomplete="on" novalidate enctype="application/x-www-form-urlencoded"  method="get">
+  <!-- The get is to bind the data in the url post send it to server -->
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" autocomplete="off"><br><br>
+  <!-- We can turn off auto complete for specific attributes -->
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <label for="cname">College Name :</label>
+  <input type="text" id="cname" name="clname" value="KPRIET" readonly><br><br>
+  <!-- un modified -->
+  <label for="age"> Age :</label>
+  <input type="text" id="age" name="age" size="1" ><br><br>
+  <!-- -visible size only works for text tel url mail pass -->
+  <label for="pn"> Pin :</label>
+  <input type="text" id="pn" name="pin" maxlength="6"><br><br>
+  <!-- After 6 can't insert  -->
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple>
+
+  <label for="patt">Enter password :</label>
+  <input type="text" name="pattern" id=" patt" placeholder="Enter the Password"
+  title="Password Must contain a-z, A-Z, 0-9 and size must be 9" pattern="[a-z A-Z 0-9]{9}">
+
+  <h3>The cursure will be placed here</h3>
+  <label for="cid">College ID :</label>
+  <input type="text" name="clgid" id="cid" autofocus>
+
+  
+</form>
+
+</body>
+</html>
+

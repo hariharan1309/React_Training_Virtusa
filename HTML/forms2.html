@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced form attributes</title>
+</head>
+<body>
+    <form id="frm1" action="" method="get" target="_self">
+        <label for="fn">Name :</label>
+        <input type="text" name="fname" id="fn"><br> <br>
+        <input type="submit" value="Submit"> &emsp;
+        <!-- the submit will work without modification -->
+        <!-- multiple actions within the form  by overriding the restrictions-->
+        <input type="submit" value="Submit as Admin" formaction="" ><br><br>
+        <input type="submit" value="Submit with  Encrypt" formenctype="multipart/form-data" ><br><br>
+        <input type="submit" value="Submit with Post Security" formmethod="post" ><br><br>
+        <input type="submit" value="Submit to new Window" formtarget="_blank"><br><br>
+        <input type="submit" value="Submit without validate" formnovalidate="_blank"><br><br>
+
+    </form>
+    <label for="ln">Last Name *:</label>
+    <input type="text" name="lname" id="ln" form="frm1">
+    <!-- the form id will link the input attribute even outside the form -->
+</body>
+</html>

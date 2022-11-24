@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes & input types</title>
+</head>
+<body>
+    <!-- Label is used elements in the form -->
+    <form action="" target="_blank" oninput="x.value=parseInt(a.value)">
+        <!-- The action is used to run the server script file on submission -->
+        <!-- The target is used display the response after submitting -->
+        <!-- The id's will be used to link label and the tag so it must be unique -->
+        <!-- The Elements will be binded to the tags on clicking the name we can acces the radio button -->
+        <label for="gen">Gender</label>
+        <input list="gender" name="gen" id="gen">
+        <!-- used to provide some predefined values for easy usage -->
+        <datalist id="gender">
+            <option value="Male">
+            <option value="Female">
+            <option value="Others">
+        </datalist>
+        <!-- name is important for each tags -->
+
+    <fieldset>
+        <!-- field set used to group related elements together -->
+        <legend>Location</legend>
+        <h3>Living :</h3>
+        <input type="radio" name="cnt" id="inr" val="in">
+        <label for="inr">India</label><br>
+        <input type="radio" name="cnt" id="usr" val="us">
+        <label for="usr">United States</label><br>
+
+        <input type="radio" name="cnt" id="ukr" val="uk">
+        <label for="ukr">United Kingdom</label><br>
+
+        <input type="radio" name="cnt" id="jpr" val="jp">
+        <label for="jpr"> Japan</label><br>
+        <h3>Native :</h3>
+        <input type="checkbox" name="cnt" id="inc" val="in">
+        <label for="inc">India</label><br>
+
+        <input type="checkbox" name="cnt" id="usc" val="us">
+        <label for="usc">United States</label><br>
+
+        <input type="checkbox" name="cnt" id="ukc" val="uk">
+        <label for="ukc">United Kingdom</label><br>
+
+        <input type="checkbox" name="cnt" id="jpc" val="jp">
+        <label for="jpc"> Japan</label><br>
+    </fieldset>
+        <h3>Text area</h3>
+        <textarea name="text1" id="asmple" cols="30" rows="10" style="resize: none;">
+            This is used get multiple line input data.Use resize to prevent the size 
+        </textarea>
+        <h3>Select </h3>
+        <label for="cars"><h3>Cars :</h3></label>
+        <select name="Cars" id="cars" >
+            <!-- size used to show selective no of options in the menu -->
+            <!-- multiple uses user to selet multiple -->
+            <optgroup label="Low Prize">
+                <!-- optgroup categories the options with label as its category -->
+            <option value="tata">Tata</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="suz">Suzuki</option>
+            <option value="mah" selected>Mahendra</option>
+            <!-- selected is used to initail selected value -->
+            </optgroup>
+
+            <optgroup label="High Prize">
+                <option value="volvo">Volvo</option>
+                <option value="jag">Jaguar</option>
+                <option value="lr">Land Rover</option>
+                <option value="roll">Rolls Royace</option>
+            </optgroup>
+            
+        </select>
+        <br>
+        <!-- the oninput will perform the operation and & it will be shown on op  -->
+        <input type="range" name="a" id="10" min="0" max="1000" step="20">
+        <!-- the for should be point to the name of the input val  -->
+        <output name="x" for="a" style="border: 3px solid black;"></output><br>
+
+        <label for="clr">Color :</label>
+        <input type="color" name="colour" id="clr" value="#000000"><br><br>
+        
+        <label for="dt">DOB :</label>
+        <input type="date" name="date" id="dt"><br><br>
+
+        <label for="dtl">DOB :(with time)</label>
+        <input type="datetime-local" name="date-t" id="dtl"><br><br>
+
+        <label for="mn">Month :</label>
+        <input type="month" name="mon" id="mn"><br><br>
+
+        <label for="ser">Search :</label>
+        <input type="search" name="find" id="ser"><br><br>
+
+        <label for="fl">File :</label>
+        <input type="file" name="fi" id="fl"><br><br>
+        
+        <label for="phn">Ph No :</label>
+        <input type="tel" name="num" id="phn"><br><br>
+
+        <label for="ur">Link :</label>
+        <input type="url" name="UrrL" id="ur" disabled><br><br>
+        <!-- disabled will restrict to modify -->
+
+        <label for="hid">hidden :</label>
+        <input type="hidden" name="hide" id="hid" value="it was hidden "><br><br>
+
+        <label for="wek">Week :</label>
+        <input type="week" name="Weeky" id="wek"><br><br>
+        
+    </form>
+</body>
+</html>

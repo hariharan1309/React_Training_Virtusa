@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Hariharan A">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1(){
+            document.getElementById("hi").innerHTML="Hello Whatsap";
+            // innerHTML for accessing the html element
+        }
+        function fun2(){
+            document.getElementById("dem1").style.fontFamily="sans-serif";
+            document.getElementById("dem1").style.fontSize="large";
+        }
+        function fun3(val){
+            var pic;
+            if(val==0){
+                pic="logo.png"
+            }
+            else{
+                pic="kprlogo.jpg"
+            }
+            document.getElementById("image").src=pic;
+        }
+        function tempFun(){
+            var x=document.getElementsByTagName("template")[0];
+            // links the first template tag
+            var cln=x.content.cloneNode(true);
+            document.body.appendChild(cln);
+        }
+    </script>
+</head>
+<body>
+    <h3>Changing the html Element</h3>
+    <button type="button" onclick="fun1()">Click me</button>
+    <p id="hi">This will be changed</p>
+    <h3>Changing the CSS[Style]</h3>
+    <p id="dem1">The Style of this line will be changed</p>
+    <button type="button" onclick="fun2()">Click me</button>
+    <p>Select the image</p>
+    <img src="" alt="The Image will be displayed" id="image"><br>&emsp;
+    <button type="button" onclick="fun3(1)">KPR</button>
+    &emsp;&emsp;
+    <button type="button" onclick="fun3(0)">LINUX</button>
+    <!-- No Scripy=t for non script support on browser -->
+    <noscript>
+        Please Enable the JavaScript in the Browser for further Usage.
+    </noscript>
+<!-- File paths -->
+<br>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"><br><br>
+<!-- Absolute Path -->
+<img src="img.jpg" alt="Same folder of the current page"><br><br>
+<img src="images/img.jpg" alt="Image folder on the current folder"><br><br>
+
+<img src="/images/img.jpg" alt="images folder of the root web folder"><br><br>
+
+<img src="../images/img.jpg" alt="image folder is One folder ahead of the current folder">
+<!-- Additional -->
+<!-- To make coding viewed on the page -->
+<code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code>
+    <!-- Gives exactly how it was written -->
+    <pre>
+        <code>
+            x = 5;
+            y = 6;
+            z = x + y;
+            </code>
+    </pre>
+    <!-- For keyboard shortcut -->
+    <kbd>Enter Ctrl+S to save</kbd>
+    <!-- To varry the normal & error like msg -->
+    <p>Browser Output</p>
+    <p><samp>Content not found</samp></p>
+    <!-- To use varibles in the content -->
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.
+    </p>
+    <button onclick="tempFun()">Hidden Template</button>
+    <template id="temp">
+        <!-- Only accessable by js -->
+        <p>This was invoked by the Js Function</p>
+    </template>
+
+</body>
+</html>
