@@ -1,0 +1,13 @@
+body{
+    background-image: linear-gradient(to right,#fff123,#111fff);
+    font-family:"Raleway",sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    top:15%;
+    font-size: large;
+}
+
+.color1 .color2 {
+    border: solid 5px grey;
+    border-radius: 5px;
+}
